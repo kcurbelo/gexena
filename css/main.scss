@@ -1,10 +1,9 @@
-
-
 /* ************************ */
 /* Colors */
 /* ************************ */
 $primary-color: #00186F;
 $secondary-color: #4D4D4D;
+$accent-color: #7DA940;
 
 
 /* ************************ */
@@ -37,18 +36,33 @@ $primary-font: 'Helvetica Neue', Arial, sans-serif;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box; 	
 }
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
 	color:$primary-color;
 	font-weight:400;
+}
+h1 {
+	@include fontSize(36px);
+}
+h2 {
+	@include fontSize(30px);
+}
+h3 {
+	@include fontSize(24px);
+}
+h4 {
+	@include fontSize(18px);
 }
 p {
 	color:$secondary-color;
 	font-size:1rem;
+	font-weight:300;
 }
 
+
+
+/* ************************ */
+/* button styles */
+/* ************************ */
 .btn {
 	border: 0;
 	background: none;
@@ -72,7 +86,7 @@ p {
 }
 
 .btn-lg {
-	background-color:#7DA940;
+	background-color:$accent-color;
 	@include fontSize(14px);
 	height:60px;
 	padding: 1.45rem 5.5rem;
@@ -80,12 +94,12 @@ p {
 }
 
 .gradient-main {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#174e90+0,348fb7+100 */
-background: #174e90; /* Old browsers */
-background: -moz-linear-gradient(left, #174e90 0%, #348fb7 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #174e90 0%,#348fb7 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #174e90 0%,#348fb7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174e90', endColorstr='#348fb7',GradientType=1 ); /* IE6-9 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#174e90+0,348fb7+100 */
+	background: #174e90; /* Old browsers */
+	background: -moz-linear-gradient(left, #174e90 0%, #348fb7 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #174e90 0%,#348fb7 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #174e90 0%,#348fb7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174e90', endColorstr='#348fb7',GradientType=1 ); /* IE6-9 */
 }
 
 .content-wrapper {
@@ -108,11 +122,7 @@ nav ul {
 }
 nav ul li {
 	list-style-type:none;
-	// display:inline-block;
-	// margin-right:2.25rem;
-	// margin-bottom:20px;
-	// border-bottom:1px solid #fff;
-		padding:10px 0;
+	padding:10px 0;
 }
 
 nav ul li a {
@@ -139,7 +149,7 @@ nav ul li a {
 	// padding: 12rem 0 14rem;
 }
 #home-title {
-	@include fontSize(36px);
+	@include fontSize(55px);
 	text-transform:uppercase;
 	margin:0;
 	font-weight:700;
@@ -147,7 +157,6 @@ nav ul li a {
 	color:#fff;
 }
 #home-sub-title {
-	@include fontSize(35px);
 	text-transform:uppercase;
 	margin:0;
 	color:#fff;	
@@ -159,21 +168,23 @@ nav ul li a {
 /* 'The Healhier Medicine' section */
 /* ************************ */
 #healthier-title {
-	@include fontSize(45px);
-
+	margin:50px 0;
 }
 .card-horizontal {
-	background-color:tan;
 	text-align:center;
 	padding:20px;
 	margin:40px 0;
-	// box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+}
+.card-horizontal h3 {
+	font-weight:700;
+}
+.card-horizontal img {
+	width:75px;
 }
 .box-shadow {
-	-webkit-box-shadow: 20px 10px 30px 0px rgba(50, 50, 50, 0.2);
-	-moz-box-shadow:    20px 10px 30px 0px rgba(50, 50, 50, 0.2);
-	box-shadow:         20px 10px 30px 0px rgba(50, 50, 50, 0.2);
+	-webkit-box-shadow: 20px 10px 30px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow:    20px 10px 30px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         20px 10px 30px 0px rgba(50, 50, 50, 0.1);
 }
 
 
@@ -183,19 +194,19 @@ nav ul li a {
 /* Featured Products Section */
 /* ************************ */
 #featured-title {
-	font-size:2.8125rem;
+	margin-bottom:0;
+	margin-top:5rem;
 }
 
 .card-img {
 	display:block;
 }
 .card-vertical {
-	background-color:salmon;
 	margin-bottom:40px;
 }
 .card-vertical img {
 	width:100%;
-	height:10rem;
+	// height:10rem;
 }
 .card-v-inner {
 	padding:1.5rem;
@@ -209,9 +220,5 @@ nav ul li a {
 	-moz-box-shadow:    -7px 0px 15px 0px rgba(50, 50, 50, 0.2);
 	box-shadow:         -7px 0px 15px 0px rgba(50, 50, 50, 0.2);	
 }
-
-
-
-
 
 
