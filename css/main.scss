@@ -1,0 +1,95 @@
+// ************************
+// Colors
+// ************************
+$primary-color: #00186F;
+$secondary-color: #4D4D4D;
+
+
+// ************************
+// Fonts
+// ************************
+@font-face {
+font-family: "Helvetica Neue";
+src: url("css/fonts/helveticaneue-webfont.eot"),
+url("css/fonts/helveticaneue-webfont.woff") format("woff"),
+url("css/fonts/helveticaneue-webfont.svg#filename") format("svg");
+}
+$primary-font: 'Helvetica Neue', Arial, sans-serif;
+
+// Function to convert pixels to rem
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+@mixin fontSize($size) {
+	font-size: $size; // Fallback in px
+	font-size: calculateRem($size);	// Output to rem 
+}
+
+// ************************
+// Tag styles
+// ************************
+* {
+	font-family: $primary-font;
+}
+h1,
+h2,
+h3,
+h4 {
+	color:$primary-color;
+	font-weight:400;
+}
+p {
+	color:$secondary-color;
+	font-size:1rem;
+}
+#delivered-title {
+	@include fontSize(85px);
+	text-transform:uppercase;
+}
+#healther-title {
+	font-size:4.0625rem;
+}
+#featured-title {
+	font-size:2.8125rem;
+}
+#started-title {
+
+}
+.btn {
+	display:inline-block;
+	color:#fff;
+	font-weight:300;
+	text-decoration:none;
+	padding: .7rem 2.4rem;
+	border-radius:100px;
+	height: 40px;
+	@include fontSize(13px);
+    cursor: pointer;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;    
+}
+
+.gradient-main {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#174e90+0,348fb7+100 */
+background: #174e90; /* Old browsers */
+background: -moz-linear-gradient(left, #174e90 0%, #348fb7 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #174e90 0%,#348fb7 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #174e90 0%,#348fb7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174e90', endColorstr='#348fb7',GradientType=1 ); /* IE6-9 */
+
+}
+
+// ************************
+// Buy Now Section
+// ************************
+
+
+
+
+
+
+
+
+
