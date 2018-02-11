@@ -1,8 +1,20 @@
+/* ************************ */
+/* Colors */
+/* ************************ */
+/* ************************ */
+/* Fonts */
+/* ************************ */
 @font-face {
   font-family: "Helvetica Neue";
   src: url("css/fonts/helveticaneue-webfont.eot"), url("css/fonts/helveticaneue-webfont.woff") format("woff"), url("css/fonts/helveticaneue-webfont.svg#filename") format("svg"); }
+/* ************************ */
+/* Tag styles */
+/* ************************ */
 * {
-  font-family: "Helvetica Neue", Arial, sans-serif; }
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 h1,
 h2,
@@ -15,17 +27,6 @@ p {
   color: #4D4D4D;
   font-size: 1rem; }
 
-#delivered-title {
-  font-size: 85px;
-  font-size: 5.3125rem;
-  text-transform: uppercase; }
-
-#healther-title {
-  font-size: 4.0625rem; }
-
-#featured-title {
-  font-size: 2.8125rem; }
-
 .btn {
   display: inline-block;
   color: #fff;
@@ -36,10 +37,7 @@ p {
   height: 40px;
   font-size: 13px;
   font-size: 0.8125rem;
-  cursor: pointer;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  cursor: pointer; }
 
 .gradient-main {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#174e90+0,348fb7+100 */
@@ -53,5 +51,91 @@ p {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174e90', endColorstr='#348fb7',GradientType=1 );
   /* IE6-9 */ }
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+/* ************************ */
+/* Navigation */
+/* ************************ */
+nav {
+  display: none; }
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  padding-top: 2rem;
+  text-align: center; }
+
+nav ul li {
+  list-style-type: none;
+  padding: 10px 0; }
+
+nav ul li a {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  opacity: .7;
+  font-size: 14px;
+  font-size: 0.875rem;
+  display: inline-block; }
+
+.nav-active {
+  opacity: 1; }
+
+/* ************************ */
+/* Home section */
+/* ************************ */
+#home-cont {
+  padding: 6rem 0 7rem; }
+
+#home-title {
+  font-size: 55px;
+  font-size: 3.4375rem;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff; }
+
+#home-sub-title {
+  font-size: 35px;
+  font-size: 2.1875rem;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: .15rem; }
+
+.home-btn {
+  background-color: #7DA940;
+  font-size: 14px;
+  font-size: 0.875rem;
+  height: 60px;
+  padding: 1.45rem 5.5rem;
+  text-transform: uppercase; }
+
+/* ************************ */
+/* 'The Healhier Medicine' section */
+/* ************************ */
+#healthier-title {
+  font-size: 45px;
+  font-size: 2.8125rem; }
+
+.long-card {
+  background-color: tan;
+  text-align: center; }
+
+/* ************************ */
+/* Featured Products Section */
+/* ************************ */
+#featured-title {
+  font-size: 2.8125rem; }
+
+.card-img {
+  display: block; }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,49 +2,73 @@
 <html>
 <head>
 	<title>Genexa</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
 </head>
 <body>
 
-<!-- =================== -->
-<!-- Navigation menu -->
-<!-- =================== -->
-<ul>
-	<li>Home</li>
-	<li>Products</li>
-	<li>Our Story</li>
-	<li>Contact</li>
-</ul>
-
-
-<!-- =================== -->
-<!-- Main banner section -->
-<!-- =================== -->
-<h2>Delivered</h2>
-<h1 id="delivered-title">On Your Schedule</h1>
-<a href="#">Shop Now</a>
-
+<div class=" gradient-main">
+	<div class="content-wrapper">
+		<!-- =================== -->
+		<!-- Navigation menu -->
+		<!-- =================== -->
+		<div id="mobile-icon-cont" style="text-align: right; padding-top: 1rem;">
+			<img id="mobile-icon" src="img/mobile-menu-icon.png" style="height: 30px;display: inline-block;">
+		</div>
+		<div id="mobile-exit-cont" style="text-align: right; padding-top: 0rem; display: none;">
+			<img id="mobile-exit-icon" src="img/mobile-menu-exit.png" style="height: 30px;display: inline-block;">
+		</div>		
+		<nav>
+			<ul>
+				<li><a class="nav-active">Home</a></li>
+				<li><a>Products</a></li>
+				<li><a>Our Story</a></li>
+				<li><a>Contact</a></li>
+			</ul>
+		</nav>
+		<!-- =================== -->
+		<!-- Home section -->
+		<!-- =================== -->
+		<div id="home-cont">
+			<h2 id="home-sub-title">Delivered</h2>
+			<h1 id="home-title">On Your Schedule</h1>
+			<a href="#" class="btn home-btn">Shop Now</a>
+		</div>
+	</div>
+</div>
 
 <!-- =================== -->
 <!-- 'The Healhier Medicine' section -->
 <!-- =================== -->
-<!-- Box-1 - top/left -->
-<h2 id="healthier-title">The healthier Medicine</h2>
+<div class="content-wrapper">
+	<!-- Box-1 - top/left -->
+	<div class="long-card">
+		<h2 id="healthier-title">The healthier Medicine</h2>
+	</div>
 
-<!-- Box-2 - top/right -->
-<img src="http://via.placeholder.com/100x100">
-<h3>Set it & forget it</h3>
-<p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt</p>
+	<!-- Box-2 - top/right -->
+	<div class="long-card">
+		<img src="http://via.placeholder.com/100x100">
+		<h3>Set it & forget it</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt</p>
+	</div>
 
-<!-- Box-3 - bottom/left -->
-<img src="http://via.placeholder.com/100x100">
-<h3>Set it & forget it</h3>
-<p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt</p>
+	<!-- Box-3 - bottom/left -->
+	<img src="http://via.placeholder.com/100x100">
+	<h3>Set it & forget it</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt</p>
 
-<!-- Box-4 - bottom/right -->
-<img src="http://via.placeholder.com/100x100">
-<h3>Set it & forget it</h3>
-<p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt</p>
+	<!-- Box-4 - bottom/right -->
+	<img src="http://via.placeholder.com/100x100">
+	<h3>Set it & forget it</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt</p>
+<div class="content-wrapper">
 
 
 <!-- =================== -->
@@ -54,19 +78,19 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
 
 <!-- Box-1 -->
-<img src="http://via.placeholder.com/100x100" class="buy-img">
+<img src="http://via.placeholder.com/100x100" class="card-img">
 <h3>Product 1</h3>
 <p>Lorem ipsum dolor sit amet,consecter dipiscing elit, seddo eiusmod tempor ncididunt utlabore et dolore magna aliqua. </p>
 <a href="#" class="btn gradient-main">Buy Now</a>
 
 <!-- Box-2 -->
-<img src="http://via.placeholder.com/100x100">
+<img src="http://via.placeholder.com/100x100" class="card-img">
 <h3>Product 2</h3>
 <p>Lorem ipsum dolor sit amet,consecter dipiscing elit, seddo eiusmod tempor ncididunt utlabore et dolore magna aliqua. </p>
 <a href="#" class="btn gradient-main">Buy Now</a>
 
 <!-- Box-3 -->
-<img src="http://via.placeholder.com/100x100">
+<img src="http://via.placeholder.com/100x100" class="card-img">
 <h3>Product 3</h3>
 <p>Lorem ipsum dolor sit amet,consecter dipiscing elit, seddo eiusmod tempor ncididunt utlabore et dolore magna aliqua. </p>
 <a href="#" class="btn gradient-main">Buy Now</a>

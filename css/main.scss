@@ -1,13 +1,15 @@
-// ************************
-// Colors
-// ************************
+
+
+/* ************************ */
+/* Colors */
+/* ************************ */
 $primary-color: #00186F;
 $secondary-color: #4D4D4D;
 
 
-// ************************
-// Fonts
-// ************************
+/* ************************ */
+/* Fonts */
+/* ************************ */
 @font-face {
 font-family: "Helvetica Neue";
 src: url("css/fonts/helveticaneue-webfont.eot"),
@@ -26,11 +28,14 @@ $primary-font: 'Helvetica Neue', Arial, sans-serif;
 	font-size: calculateRem($size);	// Output to rem 
 }
 
-// ************************
-// Tag styles
-// ************************
+/* ************************ */
+/* Tag styles */
+/* ************************ */
 * {
 	font-family: $primary-font;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 	
 }
 h1,
 h2,
@@ -43,16 +48,7 @@ p {
 	color:$secondary-color;
 	font-size:1rem;
 }
-#delivered-title {
-	@include fontSize(85px);
-	text-transform:uppercase;
-}
-#healther-title {
-	font-size:4.0625rem;
-}
-#featured-title {
-	font-size:2.8125rem;
-}
+
 #started-title {
 
 }
@@ -65,10 +61,7 @@ p {
 	border-radius:100px;
 	height: 40px;
 	@include fontSize(13px);
-    cursor: pointer;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;    
+    cursor: pointer;   
 }
 
 .gradient-main {
@@ -78,13 +71,107 @@ background: -moz-linear-gradient(left, #174e90 0%, #348fb7 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left, #174e90 0%,#348fb7 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right, #174e90 0%,#348fb7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174e90', endColorstr='#348fb7',GradientType=1 ); /* IE6-9 */
+}
+
+.content-wrapper {
+	width:90%;
+	margin:0 auto;
+}
+
+/* ************************ */
+/* Navigation */
+/* ************************ */
+nav {
+	display: none;
+}
+nav ul {
+	padding: 0;
+	margin:0;
+	padding-top:2rem;
+	text-align:center;
+}
+nav ul li {
+	list-style-type:none;
+	// display:inline-block;
+	// margin-right:2.25rem;
+	// margin-bottom:20px;
+	// border-bottom:1px solid #fff;
+		padding:10px 0;
+}
+
+nav ul li a {
+	cursor:pointer;
+	color:#fff;
+	font-weight:300;
+	text-transform:uppercase;
+	letter-spacing:.1rem;
+	opacity:.7;
+	@include fontSize(14px);
+	display:inline-block;
+	// font-size:.75rem;
+}
+.nav-active {
+	opacity:1;	
+}
+
+
+/* ************************ */
+/* Home section */
+/* ************************ */
+#home-cont {
+	padding: 6rem 0 7rem;
+	// padding: 12rem 0 14rem;
+}
+#home-title {
+	@include fontSize(55px);
+	text-transform:uppercase;
+	margin:0;
+	font-weight:700;
+	margin-bottom:2rem;
+	color:#fff;
+}
+#home-sub-title {
+	@include fontSize(35px);
+	text-transform:uppercase;
+	margin:0;
+	color:#fff;	
+	font-weight:300;
+	letter-spacing:.15rem;
+}
+.home-btn {
+	background-color:#7DA940;
+	@include fontSize(14px);
+	height:60px;
+	padding: 1.45rem 5.5rem;
+	text-transform:uppercase;
+}
+
+/* ************************ */
+/* 'The Healhier Medicine' section */
+/* ************************ */
+#healthier-title {
+	@include fontSize(45px);
+
+}
+.long-card {
+	background-color:tan;
+	text-align:center;
 
 }
 
-// ************************
-// Buy Now Section
-// ************************
 
+
+
+/* ************************ */
+/* Featured Products Section */
+/* ************************ */
+#featured-title {
+	font-size:2.8125rem;
+}
+
+.card-img {
+	display:block;
+}
 
 
 
