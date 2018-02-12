@@ -4,8 +4,6 @@
 $primary-color: #00186F;
 $secondary-color: #4D4D4D;
 $accent-color: #7DA940;
-
-
 /* ************************ */
 /* Fonts */
 /* ************************ */
@@ -15,6 +13,7 @@ $accent-color: #7DA940;
 	url("css/fonts/helveticaneue-webfont.woff") format("woff"),
 	url("css/fonts/helveticaneue-webfont.svg#filename") format("svg");
 }
+
 $primary-font: 'Helvetica Neue', Arial, sans-serif;
 
 // Function to convert pixels to rem
@@ -22,6 +21,7 @@ $primary-font: 'Helvetica Neue', Arial, sans-serif;
 	$remSize: $size / 16px;
 	@return #{$remSize}rem;
 }
+
 @mixin fontSize($size) {
 	font-size: $size; // Fallback in px
 	font-size: calculateRem($size);	// Output to rem 
@@ -36,28 +36,65 @@ $primary-font: 'Helvetica Neue', Arial, sans-serif;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box; 	
 }
+
 h1, h2, h3, h4 {
 	color:$primary-color;
 	font-weight:400;
 }
+
 h1 {
 	@include fontSize(36px);
 }
+
 h2 {
 	@include fontSize(30px);
 }
+
 h3 {
 	@include fontSize(24px);
 }
+
 h4 {
 	@include fontSize(18px);
 }
+
 p {
 	color:$secondary-color;
 	font-size:1rem;
 	font-weight:300;
 }
+textarea, input, button { 
+	outline: none; 
+}
 
+input {
+	color:$secondary-color;
+	font-weight:300;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #9F9F9F;
+  font-weight:300;
+  @include fontSize(14px);
+}
+
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #9F9F9F;
+  font-weight:300;
+  @include fontSize(14px);
+}
+
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #9F9F9F;
+  font-weight:300;
+  @include fontSize(14px);
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+  color: #9F9F9F;
+  font-weight:300;
+  @include fontSize(14px);
+}
 
 
 /* ************************ */
@@ -73,11 +110,13 @@ p {
 	border-radius:100px;
     cursor: pointer;   
 }
+
 .btn-sm {
 	height: 40px;
 	padding: .7rem 2.4rem;
 	@include fontSize(13px);
 }
+
 .btn-med {
 	@include fontSize(14px);
 	text-transform:uppercase;
@@ -114,12 +153,14 @@ p {
 nav {
 	display: none;
 }
+
 nav ul {
 	padding: 0;
 	margin:0;
 	padding-top:2rem;
 	text-align:center;
 }
+
 nav ul li {
 	list-style-type:none;
 	padding:10px 0;
@@ -136,6 +177,7 @@ nav ul li a {
 	display:inline-block;
 	// font-size:.75rem;
 }
+
 .nav-active {
 	opacity:1;	
 }
@@ -146,8 +188,8 @@ nav ul li a {
 /* ************************ */
 #home-cont {
 	padding: 6rem 0 7rem;
-	// padding: 12rem 0 14rem;
 }
+
 #home-title {
 	@include fontSize(55px);
 	text-transform:uppercase;
@@ -156,6 +198,7 @@ nav ul li a {
 	margin-bottom:2rem;
 	color:#fff;
 }
+
 #home-sub-title {
 	text-transform:uppercase;
 	margin:0;
@@ -167,20 +210,29 @@ nav ul li a {
 /* ************************ */
 /* 'The Healhier Medicine' section */
 /* ************************ */
+// #healther-cont {
+// 	text-align:center;
+// }
 #healthier-title {
 	margin:50px 0;
+}
+.card-horizontal:first-child {
+    background-color: #fff;
 }
 .card-horizontal {
 	text-align:center;
 	padding:20px;
 	margin:40px 0;
 }
+
 .card-horizontal h3 {
 	font-weight:700;
 }
+
 .card-horizontal img {
 	width:75px;
 }
+
 .box-shadow {
 	-webkit-box-shadow: 20px 10px 30px 0px rgba(50, 50, 50, 0.1);
 	-moz-box-shadow:    20px 10px 30px 0px rgba(50, 50, 50, 0.1);
@@ -198,27 +250,50 @@ nav ul li a {
 	margin-top:5rem;
 }
 
+.title-sub {
+	max-width:428px;
+	margin:0 auto;
+	margin-bottom:50px;
+}
+
 .card-img {
 	display:block;
 }
+
 .card-vertical {
 	margin-bottom:40px;
 }
+
 .card-vertical img {
 	width:100%;
 	// height:10rem;
 }
+
 .card-v-inner {
 	padding:1.5rem;
 }
-
+.card-v-inner h4 {
+	font-weight:300;
+}
 /* ************************ */
 /* 'Let's Get Started' section */
 /* ************************ */
-.input-shadow {
+.get-started-cont {
+	background-color: #F7F7F7;
+	padding: 50px 0;
+}
+.get-started-input {
+	height: 58px; 
+	display: block;
+	width: 100%;
+	border-radius:10rem;
+	border: 0;
+	padding-left: 1rem;
+	margin-bottom:1rem;
 	-webkit-box-shadow: -7px 0px 15px 0px rgba(50, 50, 50, 0.2);
 	-moz-box-shadow:    -7px 0px 15px 0px rgba(50, 50, 50, 0.2);
 	box-shadow:         -7px 0px 15px 0px rgba(50, 50, 50, 0.2);	
 }
 
 
+@import "desktop"; 
