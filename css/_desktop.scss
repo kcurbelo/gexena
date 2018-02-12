@@ -11,6 +11,7 @@
 	nav {
 		display: block;
 	}
+
 	nav ul {
 		padding: 0;
 		margin:0;
@@ -35,7 +36,13 @@
 		opacity:.7;
 		@include fontSize(14px);
 		display:inline-block;
+		transition: all 0.5s ease;
+	}
+	nav ul li a:hover {
+		opacity:1;
+		transition: all 0.5s ease;
 	}	
+
 	#mobile-icon-cont {
 		display:none;
 	}
@@ -46,6 +53,7 @@
 	#home-cont {
 		padding: 12rem 0 14rem;
 	}
+
 	#home-title {
 		@include fontSize(68px);
 		text-transform:uppercase;
@@ -69,15 +77,18 @@
 	#healthier-cont	{
 		text-align:center;
 		padding:4rem 0;
-	}	
+	}
+
 	.card-horizontal:first-child {
 	    background-color: #fff;
-	}	
+	}
+
 	#healthier-title {
 		margin:0;
 		@include fontSize(48px);
 		text-align:left;
 	}
+
 	.card-horizontal {
 		background-color:#F7F7F7;
 		text-align:center;
@@ -90,35 +101,40 @@
 		min-height:initial;
 		padding: 0;
 	}
+
 	.card-h-align-cont {
 		height: 15rem; 
 		line-height: 15rem; 
 		text-align: center;
 	}
+
 	.card-h-align-span {
 		display: inline-block; 
 		vertical-align: middle; 
 		line-height: normal;
 		width:100%;
 	}
+
 	.card-h-align-in {
 	    // background:rgb(134, 226, 255);
 	    width: 100%;
 	    text-align:left;
 	}
+
 	.card-h-align-in img {
 		display:inline-block;
 		vertical-align:middle;
 		margin: 0 4% 0 6%;
-	}	
+	}
+
 	.card-h-align-in div {
 	    display:inline-block;
 	    margin:0px;
 	    width:60%;
-	    // background:white;
 	    vertical-align:top;
 	    text-align:left;
-	}	
+	}
+
 	/* ************************ */
 	/* Featured Products Section */
 	/* ************************ */
@@ -126,21 +142,26 @@
 		margin-bottom:0;
 		padding-top:0rem;
 	}
+
 	#featured-cont	{
 		text-align:center;
 	}
+
 	.card-vertical {
 		margin-bottom:0px;
 		display:inline-block;
 		width:30%;
 		margin-right:2%;
 	}
+
 	#featured-title, .title-sub {
 		text-align:center;
 	}
+
 	.card-v-btn-cont {
 		text-align:right;
 	}
+
 	.card-v-inner {
 		text-align:left;
 	}
@@ -151,15 +172,18 @@
 	.get-started-cont {
 		padding: 8rem 0;
 	}
+
 	#get-started-title {
 		text-align:center;
 	}
+
 	.input-cont {
 		display: inline-block;
 		margin: 0 auto;
 		width: 100%;
 		text-align: center;
 	}
+
 	.get-started-input {
 		height: 48px; 
 		display: inline-block;
@@ -174,6 +198,7 @@
 		-moz-box-shadow:    -7px 0px 15px 0px rgba(50, 50, 50, 0.2);
 		box-shadow:         -7px 0px 15px 0px rgba(50, 50, 50, 0.2);	
 	}
+
 	.submit-btn {
 		margin-left:-1.4rem;
 		vertical-align:top;

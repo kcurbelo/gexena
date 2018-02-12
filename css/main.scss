@@ -1,9 +1,12 @@
 /* ************************ */
 /* Colors */
 /* ************************ */
-$primary-color: #00186F;
-$secondary-color: #4D4D4D;
-$accent-color: #7DA940;
+
+$blue: #00186F;
+$grey: #4D4D4D;
+$green: #7DA940;
+
+
 /* ************************ */
 /* Fonts */
 /* ************************ */
@@ -38,7 +41,7 @@ $primary-font: 'Helvetica Neue', Arial, sans-serif;
 }
 
 h1, h2, h3, h4 {
-	color:$primary-color;
+	color:$blue;
 	font-weight:400;
 }
 
@@ -59,7 +62,7 @@ h4 {
 }
 
 p {
-	color:$secondary-color;
+	color:$grey;
 	font-size:1rem;
 	font-weight:300;
 	line-height: 1.75rem;
@@ -69,7 +72,7 @@ textarea, input, button {
 }
 
 input {
-	color:$secondary-color;
+	color:$grey;
 	font-weight:300;
 }
 
@@ -122,24 +125,31 @@ input:-moz-placeholder { /* Firefox 18- */
 	@include fontSize(14px);
 	text-transform:uppercase;
 	padding: 1rem 3.5rem;
-
 }
 
 .btn-lg {
-	background-color:$accent-color;
+	background-color:$green;
 	@include fontSize(14px);
 	height:60px;
 	padding: 1.45rem 5.5rem;
 	text-transform:uppercase;
 }
 
+.home-bg {
+	background: #273B85;
+	background-image: url("../img/waves.png"); /* fallback */
+	background-size:cover;
+	background-repeat: none;
+
+	background-image: url("../img/waves.png"), linear-gradient(120deg, #273B85 0%,#509ABE 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+}
+
 .gradient-main {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#174e90+0,348fb7+100 */
-	background: #174e90; /* Old browsers */
-	background: -moz-linear-gradient(left, #174e90 0%, #348fb7 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #174e90 0%,#348fb7 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #174e90 0%,#348fb7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174e90', endColorstr='#348fb7',GradientType=1 ); /* IE6-9 */
+	background: #273B85; /* Old browsers */
+	background: -moz-linear-gradient(left, #273B85 0%, #509ABE 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #273B85 0%,#509ABE 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #273B85 0%,#509ABE 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273B85', endColorstr='#509ABE',GradientType=1 ); /* IE6-9 */
 }
 
 .content-wrapper {
@@ -227,11 +237,13 @@ nav ul li a {
 #healthier-title {
 	margin:50px 0;
 }
+
 .card-horizontal:first-child {
     background-color: #fff;
     padding:0;
     box-shadow:none;
 }
+
 .card-horizontal {
 	text-align:center;
 	padding:4rem 1rem;
@@ -253,9 +265,6 @@ nav ul li a {
 	-moz-box-shadow:    20px 10px 30px 0px rgba(50, 50, 50, 0.1);
 	box-shadow:         20px 10px 30px 0px rgba(50, 50, 50, 0.1);
 }
-
-
-
 
 /* ************************ */
 /* Featured Products Section */
@@ -287,8 +296,27 @@ nav ul li a {
 .card-v-inner {
 	padding:1.5rem;
 }
+
 .card-v-inner h4 {
+	
 	font-weight:300;
+}
+.crop-1, .crop-2, .crop-3 {
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+}
+
+.crop-1 img {
+    margin: -40px 0 0 0px;
+}
+
+.crop-2 img {
+    margin: -25px 0 0 0px;
+}
+
+.crop-3 img {
+    margin: -10px 0 0 0px;
 }
 /* ************************ */
 /* 'Let's Get Started' section */
@@ -310,20 +338,6 @@ nav ul li a {
 	box-shadow:         -7px 0px 15px 0px rgba(50, 50, 50, 0.2);	
 }
 
-.crop-1, .crop-2, .crop-3 {
-    width: 100%;
-    height: 175px;
-    overflow: hidden;
-}
 
-.crop-1 img {
-    margin: -40px 0 0 0px;
-}
-.crop-2 img {
-    margin: -25px 0 0 0px;
-}
-.crop-3 img {
-    margin: -10px 0 0 0px;
-}
 
 @import "desktop"; 

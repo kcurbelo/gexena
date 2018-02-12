@@ -110,17 +110,25 @@ input:-moz-placeholder {
   padding: 1.45rem 5.5rem;
   text-transform: uppercase; }
 
+.home-bg {
+  background: #273B85;
+  background-image: url("../img/waves.png");
+  /* fallback */
+  background-size: cover;
+  background-repeat: none;
+  background-image: url("../img/waves.png"), linear-gradient(120deg, #273B85 0%, #509ABE 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
 .gradient-main {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#174e90+0,348fb7+100 */
-  background: #174e90;
+  background: #273B85;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #174e90 0%, #348fb7 100%);
+  background: -moz-linear-gradient(left, #273B85 0%, #509ABE 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #174e90 0%, #348fb7 100%);
+  background: -webkit-linear-gradient(left, #273B85 0%, #509ABE 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #174e90 0%, #348fb7 100%);
+  background: linear-gradient(to right, #273B85 0%, #509ABE 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174e90', endColorstr='#348fb7',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273B85', endColorstr='#509ABE',GradientType=1 );
   /* IE6-9 */ }
 
 .content-wrapper {
@@ -247,6 +255,20 @@ nav ul li a {
 .card-v-inner h4 {
   font-weight: 300; }
 
+.crop-1, .crop-2, .crop-3 {
+  width: 100%;
+  height: 175px;
+  overflow: hidden; }
+
+.crop-1 img {
+  margin: -40px 0 0 0px; }
+
+.crop-2 img {
+  margin: -25px 0 0 0px; }
+
+.crop-3 img {
+  margin: -10px 0 0 0px; }
+
 /* ************************ */
 /* 'Let's Get Started' section */
 /* ************************ */
@@ -265,20 +287,6 @@ nav ul li a {
   -webkit-box-shadow: -7px 0px 15px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: -7px 0px 15px 0px rgba(50, 50, 50, 0.2);
   box-shadow: -7px 0px 15px 0px rgba(50, 50, 50, 0.2); }
-
-.crop-1, .crop-2, .crop-3 {
-  width: 100%;
-  height: 175px;
-  overflow: hidden; }
-
-.crop-1 img {
-  margin: -40px 0 0 0px; }
-
-.crop-2 img {
-  margin: -25px 0 0 0px; }
-
-.crop-3 img {
-  margin: -10px 0 0 0px; }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -315,7 +323,12 @@ nav ul li a {
     opacity: .7;
     font-size: 14px;
     font-size: 0.875rem;
-    display: inline-block; }
+    display: inline-block;
+    transition: all 0.5s ease; }
+
+  nav ul li a:hover {
+    opacity: 1;
+    transition: all 0.5s ease; }
 
   #mobile-icon-cont {
     display: none; }
