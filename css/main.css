@@ -1,15 +1,15 @@
-/* ************************ */
+/* ********************************** */
 /* Colors */
-/* ************************ */
-/* ************************ */
+/* ********************************** */
+/* ********************************** */
 /* Fonts */
-/* ************************ */
+/* ********************************** */
 @font-face {
   font-family: "Helvetica Neue";
   src: url("css/fonts/helveticaneue-webfont.eot"), url("css/fonts/helveticaneue-webfont.woff") format("woff"), url("css/fonts/helveticaneue-webfont.svg#filename") format("svg"); }
-/* ************************ */
+/* ********************************** */
 /* Tag styles */
-/* ************************ */
+/* ********************************** */
 * {
   font-family: "Helvetica Neue", Arial, sans-serif;
   -webkit-box-sizing: border-box;
@@ -77,9 +77,9 @@ input:-moz-placeholder {
   font-size: 14px;
   font-size: 0.875rem; }
 
-/* ************************ */
+/* ********************************** */
 /* button styles */
-/* ************************ */
+/* ********************************** */
 .btn {
   border: 0;
   background: none;
@@ -110,46 +110,9 @@ input:-moz-placeholder {
   padding: 1.45rem 5.5rem;
   text-transform: uppercase; }
 
-.home-bg {
-  background: #273B85;
-  background-image: url("../img/waves.png");
-  /* fallback */
-  background-size: cover;
-  background-repeat: none;
-  background-image: url("../img/waves.png"), linear-gradient(120deg, #273B85 0%, #509ABE 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
-
-.gradient-main {
-  background: #273B85;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #273B85 0%, #509ABE 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #273B85 0%, #509ABE 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #273B85 0%, #509ABE 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273B85', endColorstr='#509ABE',GradientType=1 );
-  /* IE6-9 */ }
-
-.content-wrapper {
-  width: 90%;
-  margin: 0 auto;
-  text-align: center; }
-
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table; }
-
-.cf:after {
-  clear: both; }
-
-.cf {
-  *zoom: 1; }
-
-/* ************************ */
+/* ********************************** */
 /* Navigation */
-/* ************************ */
+/* ********************************** */
 nav {
   display: none; }
 
@@ -177,9 +140,37 @@ nav ul li a {
 .nav-active {
   opacity: 1; }
 
-/* ************************ */
+#mobile-icon-cont {
+  text-align: right;
+  padding-top: 1rem; }
+
+#mobile-icon {
+  height: 30px;
+  display: inline-block;
+  cursor: pointer; }
+
+#mobile-exit-cont {
+  text-align: right;
+  padding-top: 0rem;
+  display: none; }
+
+#mobile-exit-icon {
+  height: 30px;
+  display: inline-block;
+  cursor: pointer; }
+
+/* ********************************** */
 /* Home section */
-/* ************************ */
+/* ********************************** */
+.home-bg {
+  background: #273B85;
+  background-image: url("../img/waves.png");
+  /* fallback */
+  background-size: cover;
+  background-repeat: none;
+  background-image: url("../img/waves.png"), linear-gradient(120deg, #273B85 0%, #509ABE 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
 #home-cont {
   padding: 6rem 0 7rem; }
 
@@ -199,11 +190,12 @@ nav ul li a {
   font-weight: 300;
   letter-spacing: .15rem; }
 
-/* ************************ */
+/* ********************************** */
 /* 'The Healhier Medicine' section */
-/* ************************ */
+/* ********************************** */
 #healthier-title {
-  margin: 50px 0; }
+  margin: 50px 0;
+  line-height: 3.75rem; }
 
 .card-horizontal:first-child {
   background-color: #fff;
@@ -216,7 +208,13 @@ nav ul li a {
   margin: 3.5rem 0; }
 
 .card-h-align-in div h3 {
-  font-weight: 700; }
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: .5rem; }
+
+.card-h-align-in div p {
+  margin: 0;
+  line-height: 1.75rem; }
 
 .card-h-align-in img {
   display: inline-block;
@@ -228,12 +226,15 @@ nav ul li a {
   -moz-box-shadow: 20px 10px 30px 0px rgba(50, 50, 50, 0.1);
   box-shadow: 20px 10px 30px 0px rgba(50, 50, 50, 0.1); }
 
-/* ************************ */
+/* ********************************** */
 /* Featured Products Section */
-/* ************************ */
+/* ********************************** */
 #featured-title {
   margin-bottom: 0;
   padding-top: 2rem; }
+
+#featured-cont {
+  padding: 0 0 6rem 0; }
 
 .title-sub {
   max-width: 428px;
@@ -269,9 +270,9 @@ nav ul li a {
 .crop-3 img {
   margin: -10px 0 0 0px; }
 
-/* ************************ */
+/* ********************************** */
 /* 'Let's Get Started' section */
-/* ************************ */
+/* ********************************** */
 .get-started-cont {
   background-color: #F7F7F7;
   padding: 50px 0; }
@@ -287,6 +288,37 @@ nav ul li a {
   -webkit-box-shadow: -7px 0px 15px 0px rgba(50, 50, 50, 0.2);
   -moz-box-shadow: -7px 0px 15px 0px rgba(50, 50, 50, 0.2);
   box-shadow: -7px 0px 15px 0px rgba(50, 50, 50, 0.2); }
+
+.gradient-main {
+  background: #273B85;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #273B85 0%, #509ABE 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #273B85 0%, #509ABE 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #273B85 0%, #509ABE 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273B85', endColorstr='#509ABE',GradientType=1 );
+  /* IE6-9 */ }
+
+/* ********************************** */
+/* Misc */
+/* ********************************** */
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
@@ -418,7 +450,8 @@ nav ul li a {
     padding-top: 0rem; }
 
   #featured-cont {
-    text-align: center; }
+    text-align: center;
+    padding: 0 0 6rem 0; }
 
   .card-vertical {
     margin-bottom: 0px;
