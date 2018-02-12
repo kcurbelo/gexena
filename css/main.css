@@ -127,6 +127,17 @@ input:-moz-placeholder {
   margin: 0 auto;
   text-align: center; }
 
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  *zoom: 1; }
+
 /* ************************ */
 /* Navigation */
 /* ************************ */
@@ -186,18 +197,21 @@ nav ul li a {
   margin: 50px 0; }
 
 .card-horizontal:first-child {
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 0; }
 
 .card-horizontal {
   text-align: center;
-  padding: 20px;
-  margin: 40px 0; }
+  padding: 4rem 1rem;
+  margin: 3.5rem 0; }
 
-.card-horizontal h3 {
+.card-h-align-in div h3 {
   font-weight: 700; }
 
-.card-horizontal img {
-  width: 75px; }
+.card-h-align-in img {
+  display: inline-block;
+  width: 60px;
+  margin-bottom: 1rem; }
 
 .box-shadow {
   -webkit-box-shadow: 20px 10px 30px 0px rgba(50, 50, 50, 0.1);
@@ -209,7 +223,7 @@ nav ul li a {
 /* ************************ */
 #featured-title {
   margin-bottom: 0;
-  margin-top: 5rem; }
+  padding-top: 2rem; }
 
 .title-sub {
   max-width: 428px;
@@ -316,7 +330,8 @@ nav ul li a {
   /* 'The Healhier Medicine' section */
   /* ************************ */
   #healthier-cont {
-    text-align: center; }
+    text-align: center;
+    padding: 4rem 0; }
 
   .card-horizontal:first-child {
     background-color: #fff; }
@@ -340,19 +355,40 @@ nav ul li a {
     min-height: initial;
     padding: 0; }
 
-  .sq-cont {
-    height: 14rem;
-    line-height: 14rem;
+  .card-h-align-cont {
+    height: 15rem;
+    line-height: 15rem;
     text-align: center; }
 
-  .cont-span {
+  .card-h-align-span {
     display: inline-block;
     vertical-align: middle;
-    line-height: normal; }
+    line-height: normal;
+    width: 100%; }
+
+  .card-h-align-in {
+    width: 100%;
+    text-align: left; }
+
+  .card-h-align-in img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4% 0 6%; }
+
+  .card-h-align-in div {
+    display: inline-block;
+    margin: 0px;
+    width: 60%;
+    vertical-align: top;
+    text-align: left; }
 
   /* ************************ */
   /* Featured Products Section */
   /* ************************ */
+  #featured-title {
+    margin-bottom: 0;
+    padding-top: 0rem; }
+
   #featured-cont {
     text-align: center; }
 
@@ -368,9 +404,18 @@ nav ul li a {
   .card-v-btn-cont {
     text-align: right; }
 
+  .card-v-inner {
+    text-align: left; }
+
+  .card-v-inner p {
+    line-height: 1.75rem; }
+
   /* ************************ */
   /* 'Let's Get Started' section */
   /* ************************ */
+  .get-started-cont {
+    padding: 8rem 0; }
+
   #get-started-title {
     text-align: center; }
 

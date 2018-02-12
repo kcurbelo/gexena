@@ -146,6 +146,18 @@ input:-moz-placeholder { /* Firefox 18- */
 	margin:0 auto;
 	text-align:center;
 }
+// Clearfix
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
 
 /* ************************ */
 /* Navigation */
@@ -210,28 +222,29 @@ nav ul li a {
 /* ************************ */
 /* 'The Healhier Medicine' section */
 /* ************************ */
-// #healther-cont {
-// 	text-align:center;
-// }
+
 #healthier-title {
 	margin:50px 0;
 }
 .card-horizontal:first-child {
     background-color: #fff;
+    padding:0;
 }
 .card-horizontal {
 	text-align:center;
-	padding:20px;
-	margin:40px 0;
+	padding:4rem 1rem;
+	margin:3.5rem 0;
 }
 
-.card-horizontal h3 {
+.card-h-align-in div h3 {
 	font-weight:700;
-}
+}	
 
-.card-horizontal img {
-	width:75px;
-}
+.card-h-align-in img {
+    display:inline-block;
+    width:60px;
+    margin-bottom:1rem;
+}	
 
 .box-shadow {
 	-webkit-box-shadow: 20px 10px 30px 0px rgba(50, 50, 50, 0.1);
@@ -247,7 +260,7 @@ nav ul li a {
 /* ************************ */
 #featured-title {
 	margin-bottom:0;
-	margin-top:5rem;
+	padding-top:2rem;
 }
 
 .title-sub {

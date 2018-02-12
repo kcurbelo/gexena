@@ -68,6 +68,7 @@
 	/* ************************ */	
 	#healthier-cont	{
 		text-align:center;
+		padding:4rem 0;
 	}	
 	.card-horizontal:first-child {
 	    background-color: #fff;
@@ -90,19 +91,42 @@
 		min-height:initial;
 		padding: 0;
 	}
-	.sq-cont {
-		height: 14rem; 
-		line-height: 14rem; 
+	.card-h-align-cont {
+		height: 15rem; 
+		line-height: 15rem; 
 		text-align: center;
 	}
-	.cont-span {
+	.card-h-align-span {
 		display: inline-block; 
 		vertical-align: middle; 
 		line-height: normal;
+		width:100%;
 	}
+	.card-h-align-in {
+	    // background:rgb(134, 226, 255);
+	    width: 100%;
+	    text-align:left;
+	}
+	.card-h-align-in img {
+		display:inline-block;
+		vertical-align:middle;
+		margin: 0 4% 0 6%;
+	}	
+	.card-h-align-in div {
+	    display:inline-block;
+	    margin:0px;
+	    width:60%;
+	    // background:white;
+	    vertical-align:top;
+	    text-align:left;
+	}	
 	/* ************************ */
 	/* Featured Products Section */
 	/* ************************ */
+	#featured-title {
+		margin-bottom:0;
+		padding-top:0rem;
+	}
 	#featured-cont	{
 		text-align:center;
 	}
@@ -118,10 +142,19 @@
 	.card-v-btn-cont {
 		text-align:right;
 	}
+	.card-v-inner {
+		text-align:left;
+	}
+	.card-v-inner p {
+		line-height: 1.75rem;
+	}
 
 	/* ************************ */
 	/* 'Let's Get Started' section */
 	/* ************************ */
+	.get-started-cont {
+		padding: 8rem 0;
+	}
 	#get-started-title {
 		text-align:center;
 	}
